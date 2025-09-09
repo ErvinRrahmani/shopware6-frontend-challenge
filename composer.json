@@ -1,0 +1,22 @@
+{
+  "name": "dutchdrops/dd-frontend-theme",
+  "description": "Dutchdrops Frontend Theme",
+  "type": "shopware-platform-plugin",
+  "license": "MIT",
+  "require": {
+    "shopware/core": ">=6.5"
+  },
+  "extra": {
+    "shopware-plugin-class": "DdFrontendTheme\\DdFrontendTheme",
+    "label": {
+      "en-GB": "Dutchdrops Frontend Theme",
+      "de-DE": "Dutchdrops Frontend Theme"
+    }
+  },
+  "autoload": {
+    "psr-4": {
+      "DdFrontendTheme\\": "src/"
+    }
+  }
+}
+

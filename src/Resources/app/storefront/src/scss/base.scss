@@ -1,0 +1,26 @@
+
+:root {
+	--dd-primary: #0b6cfb;
+	--dd-secondary: #6c757d;
+	--dd-success: #28a745;
+	--dd-danger: #dc3545;
+	--dd-warning: #ffc107;
+	--dd-info: #17a2b8;
+	--dd-light: #f8f9fa;
+	--dd-dark: #343a40;
+	--dd-white: #ffffff;
+	--dd-transition: all 0.3s ease;
+	--dd-border-radius: 8px;
+	--dd-box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+body.dd-frontend-theme {
+	background-color: var(--dd-white);
+	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+@import 'components/cms-banner-slider';
+@import 'components/category-grid';
+@import 'components/filter-offcanvas';
+@import 'components/animations';
+

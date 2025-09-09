@@ -1,0 +1,48 @@
+{% block dd_banner_slider_config %}
+    <sw-card title="Banner Slider Configuration">
+        <sw-container>
+            <sw-button @click="addSlide" variant="ghost" size="small">
+                <sw-icon name="regular-plus" small></sw-icon>
+                Add Slide
+            </sw-button>
+        </sw-container>
+        
+        <sw-container v-for="(slide, index) in slides" :key="index" class="slide-config">
+            <sw-card :title="`Slide ${index + 1}`">
+                <sw-container>
+                    <sw-media-upload-v2
+                        :label="`Slide ${index + 1} Image`"
+                        :value="slide.image"
+                        @update:value="updateSlide(index, 'image', $event)"
+                        variant="regular"
+                        :upload-tag="`banner-slider-${index}`"
+                    ></sw-media-upload-v2>
+                    
+                    <sw-text-field
+                        :label="`Slide ${index + 1} Title`"
+                        :value="slide.title"
+                        @input="updateSlide(index, 'title', $event)"
+                        placeholder="Enter slide title"
+                    ></sw-text-field>
+                    
+                    <sw-textarea-field
+                        :label="`Slide ${index + 1} Description`"
+                        :value="slide.description"
+                        @input="updateSlide(index, 'description', $event)"
+                        placeholder="Enter slide description"
+                    ></sw-textarea-field>
+                    
+                    <sw-button 
+                        @click="removeSlide(index)" 
+                        variant="danger" 
+                        size="small"
+                        :disabled="slides.length <= 1"
+                    >
+                        <sw-icon name="regular-trash" small></sw-icon>
+                        Remove Slide
+                    </sw-button>
+                </sw-container>
+            </sw-card>
+        </sw-container>
+    </sw-card>
+{% endblock %}

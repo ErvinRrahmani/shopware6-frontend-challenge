@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/shopware/platform/trunk/src/Core/System/SystemConfig/Schema/config.xsd">
+    
+    <card>
+        <title>Theme Settings</title>
+        <title lang="de-DE">Theme-Einstellungen</title>
+        
+        <input-field type="bool">
+            <name>enableAnimations</name>
+            <label>Enable Animations</label>
+            <label lang="de-DE">Animationen aktivieren</label>
+            <defaultValue>true</defaultValue>
+        </input-field>
+        
+        <input-field type="bool">
+            <name>enableLazyLoading</name>
+            <label>Enable Lazy Loading</label>
+            <label lang="de-DE">Lazy Loading aktivieren</label>
+            <defaultValue>true</defaultValue>
+        </input-field>
+        
+        <input-field type="single-select">
+            <name>defaultTheme</name>
+            <label>Default Theme</label>
+            <label lang="de-DE">Standard-Theme</label>
+            <options>
+                <option>
+                    <id>dd_frontend_theme</id>
+                    <name>Dutchdrops Frontend Theme</name>
+                </option>
+            </options>
+            <defaultValue>dd_frontend_theme</defaultValue>
+        </input-field>
+    </card>
+</config>

@@ -1,0 +1,16 @@
+{% block dd_frontend_theme_list %}
+    <sw-page class="dd-frontend-theme-list">
+        <template slot="smart-bar-actions">
+            <sw-button variant="primary" @click="onCreate">
+                Create Theme
+            </sw-button>
+        </template>
+        
+        <template slot="content">
+            <sw-card>
+                <h2>Dutchdrops Frontend Theme</h2>
+                <p>Custom theme with CMS banner slider, category grid layout, and filter offcanvas.</p>
+            </sw-card>
+        </template>
+    </sw-page>
+{% endblock %}

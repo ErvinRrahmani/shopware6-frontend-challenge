@@ -1,0 +1,16 @@
+{% block dd_frontend_theme_detail %}
+    <sw-page class="dd-frontend-theme-detail">
+        <template slot="smart-bar-actions">
+            <sw-button variant="primary" @click="onSave">
+                Save Theme
+            </sw-button>
+        </template>
+        
+        <template slot="content">
+            <sw-card>
+                <h2>Theme Configuration</h2>
+                <p>Configure your custom frontend theme settings.</p>
+            </sw-card>
+        </template>
+    </sw-page>
+{% endblock %}

@@ -1,0 +1,28 @@
+{
+  "name": "DdFrontendTheme",
+  "author": "Dutchdrops",
+  "views": [
+    "@Storefront",
+    "@Plugins",
+    "Resources/views"
+  ],
+  "style": [
+    "app/storefront/src/scss/base.scss"
+  ],
+  "script": [
+    "app/storefront/src/main.js"
+  ],
+  "asset": [
+    "app/storefront/dist"
+  ],
+  "config": {
+    "fields": {}
+  },
+  "meta": {
+    "label": {
+      "en-GB": "Dutchdrops Frontend Theme",
+      "de-DE": "Dutchdrops Frontend Theme"
+    }
+  }
+}
+

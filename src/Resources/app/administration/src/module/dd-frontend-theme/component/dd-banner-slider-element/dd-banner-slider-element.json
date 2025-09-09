@@ -1,0 +1,34 @@
+{
+    "name": "dd-banner-slider",
+    "label": {
+        "en-GB": "Dutchdrops Banner Slider",
+        "de-DE": "Dutchdrops Banner Slider"
+    },
+    "category": "commerce",
+    "icon": "regular-image",
+    "component": "dd-banner-slider-element",
+    "configComponent": "dd-banner-slider-config",
+    "previewComponent": "dd-banner-slider-element",
+    "defaultConfig": {
+        "slides": {
+            "source": "static",
+            "value": [
+                {
+                    "image": "",
+                    "title": "Welcome to our store",
+                    "description": "Discover amazing products"
+                },
+                {
+                    "image": "",
+                    "title": "Special Offers",
+                    "description": "Limited time deals"
+                },
+                {
+                    "image": "",
+                    "title": "New Arrivals",
+                    "description": "Fresh products added daily"
+                }
+            ]
+        }
+    }
+}
